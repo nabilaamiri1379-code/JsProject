@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAB Barand</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <section class="hero-section">
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+      <div class="container">
+
+
+        <i class="fa-solid fa-graduation" aria-hidden="true"></i>
+        💄Queen Beauty
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"> <a class="nav-link" href="#Home">Home</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#About">About</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#news">News</a></li>
+          </ul>
+
+          <input type="text" id="search" class="form-control w-25" placeholder="Search...">
+          <button class="btn btn-dark ms-2" onclick="toggleDark()">🌙</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  </section>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>✨Be more cheerful than aver</h1>
+    <p>High quality,Great price</p>
+  </div>
+ 
+
+  <!-- Products -->
+  <div class="container mt-4">
+    <div class="row" id="products"></div>
+  </div>
+
+  <!-- perfume  -->
+  <div class="contact mt-4">
+    <div class="row" id="perfume"></div>
+  </div>
+  </div>
+
+  <!-- About me -->
+  <section id="about" class="mb-5">
+
+    <div class="about-hero text-center ">
+      <h1>About Our Beauty Shop 💄</h1>
+      <p>We bring beauty and confidence to you</p>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row align-items-center">
+
+        <div class="col-md-6">
+          <img src="imges/photo_2026-04-18_17-27-41.jpg" class="img-fluid rounded">
+        </div>
+
+        <div class="col-md-6">
+          <h2>Who We Are</h2>
+          <h5>Welcome to Queen Beauty</h5>
+          <p>
+
+
+            At Queen Beauty, we believe that beauty is more than just appearance — it is confidence, self-expression,
+            and individuality.
+            Our mission is to provide high-quality beauty products that enhance your natural glow and empower you to
+            feel
+            your best every day.
+
+            We carefully select and design our products with love and attention to detail. From elegant lipsticks
+            to premium cosmetics, each item is created to meet modern beauty standards while maintaining comfort and
+            long-lasting quality.
+
+            Our brand is inspired by sophistication, simplicity, and the unique beauty of every individual.
+            Whether you prefer a natural look or a bold style, Queen Beauty is here to support your journey.
+
+            Customer satisfaction is at the heart of everything we do. We are committed to delivering not
+            only beautiful products but also a seamless and enjoyable shopping experience.
+
+            Queen Beauty — Where Beauty Meets Confidence.
+          </p>
+          <p>
+            We focus on quality, trust, and customer satisfaction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact" class="mt-5">
+    <div class="contact-hero text-center">
+      <h1>Contact Us <i class="fa fa-phone icon-brown "></i>
+      </h1>
+      <p>We are here to help you</p>
+    </div>
+    <div class="container mt-50">
+      <div class="row">
+
+        <!-- Contact Info -->
+
+        <div class=" info col-md-5">
+          <h3>Get in Touch</h3>
+          <p><i class="fa fa-map-marker icon-brown"></i>
+            Herat, Afghanistan</p>
+          <p><i class="fa fa-phone icon-brown"></i>
+            +93 700 000 000</p>
+          <p><i class="fa fa-envelope icon-brown"></i>
+            @Queen beautyshop.com</p>
+        </div>
+
+        <!-- Form -->
+
+        <div class=" form col-md-7">
+          <form onsubmit="sendMessage(event)">
+            <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+            <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+            <textarea class="form-control mb-3" rows="5" placeholder="Your Message" required></textarea>
+
+            <button class="btn btn-brown w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+
+  <div class="news-hero">
+    <h1>Latest News</h1>
+    <p>Beauty tips, trends, and updates from Queen Beauty</p>
+  </div>
+  <section class="news" id="news">
+    <div class="news-container">
+      <div class="news-card">
+        <img src="imges/photo_2026-04-18_16-37-16.jpg" alt="Beauty Tips">
+        <div class="news-content">
+          <h3>Top Lipstick Trends 2026</h3>
+          <p>
+            Discover the latest lipstick colors and beauty styles that are becoming popular this year.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+
+      <div class="news-card">
+        <img src="imges/photo_2026-04-18_17-24-05.jpg" alt="Perfume">
+        <div class="news-content">
+          <h3>Top Perfume Trends 2026</h3>
+          <p>
+            Discover the newest luxury fragrances and elegant perfume collections of this year.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="imges/photo_2026-04-18_18-23-31.jpg" alt="Makeup">
+        <div class="news-content">
+          <h3>Makeup Tips for Beginners</h3>
+          <p>
+            Start your beauty journey with simple and professional makeup tips for beginners.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container py-4">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-7">
+          <p class="mb-1 fw-semibold">Your beauty,Your power</p>
+          <p class="mb-0">
+            2036 Queen Beauty.Nabila Amiri.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
